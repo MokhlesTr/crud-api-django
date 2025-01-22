@@ -2,13 +2,81 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TEST</title>
+    <title>Explore</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        background-color: #fff;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 5%;
+      }
+
+      th,
+      td {
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+
+      th {
+        background-color: #6626d4;
+        color: white;
+      }
+
+      button {
+        padding: 8px 16px;
+        margin: 5px;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+      #new3 {
+        padding: 20px;
+        border-radius: 20px;
+        background-color: #6626d4;
+      }
+    </style>
   </head>
   <body>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat harum
-    tempora eligendi dolor, neque ad odit reprehenderit temporibus sint
-    accusantium exercitationem tenetur nulla voluptatum tempore voluptas
-    repellendus dolorem vel consectetur!
+    <div class="container">
+      <h1>Members</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>John</td>
+            <td>Doe</td>
+            <td>
+              <a><button id="up">Update</button></a>
+              <a><button id="del">Delete</button></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <a id="new3">Add Member</a>
+    </div>
   </body>
 </html>
