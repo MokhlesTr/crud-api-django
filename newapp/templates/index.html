@@ -57,26 +57,32 @@
       <table>
         <thead>
           <tr>
-            <th>Id</th>
+            <th>id</th>
             <th>First Name</th>
             <th>Last Name</th>
+            <th>Country</th>
             <th>Action</th>
           </tr>
         </thead>
+        {% for x in mem %}
+
         <tbody>
           <tr>
-            <td>1</td>
-            <td>John</td>
-            <td>Doe</td>
+            <td>{{x.id}}</td>
+            <td>{{x.firstname}}</td>
+            <td>{{x.lastname}}</td>
+            <td>{{x.country}}</td>
+
             <td>
               <a><button id="up">Update</button></a>
               <a><button id="del">Delete</button></a>
             </td>
           </tr>
         </tbody>
+        {% endfor%}
       </table>
       <br />
-      <a id="new3">Add Member</a>
+      <button id="new3">Add Member</button>
     </div>
   </body>
 </html>
