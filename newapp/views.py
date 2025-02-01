@@ -1,4 +1,5 @@
 from django.shortcuts import render
-
+from .models import Member
 def index (request):
-    return render(request,'index.html')
+    mem=Member.objects.all()
+    return render(request,'index.html',{'mem':mem})
