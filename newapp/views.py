@@ -14,3 +14,9 @@ def addrec(request):
     mem=Member(firstname=x,lastname=y,country=z)
     mem.save()
     return redirect("/")
+
+def delete(request,id):
+        mem=Member.objects.get(id=id)
+        mem.delete()
+        return redirect("/")
+
