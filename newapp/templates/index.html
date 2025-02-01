@@ -51,6 +51,7 @@
       }
     </style>
   </head>
+
   <body>
     <div class="container">
       <h1>Members</h1>
@@ -82,7 +83,9 @@
         {% endfor%}
       </table>
       <br />
-      <button id="new3">Add Member</button>
+      <a href="{% url 'add' %}">
+        <button id="new3">Add Member</button>
+      </a>
     </div>
   </body>
 </html>
