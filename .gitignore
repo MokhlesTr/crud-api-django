@@ -1,0 +1,44 @@
+# Python bytecode files
+*.pyc
+*.pyo
+__pycache__
+
+# Virtual environment
+env/
+venv/
+*.env
+*.venv
+
+# Django migration files
+migrations/
+
+# Database files
+*.sqlite3
+
+# Static files
+/static/
+*.log
+
+# Media files
+/media/
+
+# Coverage reports
+.coverage
+nosetests.xml
+coverage.xml
+*.cover
+
+# Django settings
+*.sqlite3
+
+# VS Code settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# Environment variable files
+.env
+
+# Pytest cache
+.cache/
